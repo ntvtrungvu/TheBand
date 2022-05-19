@@ -1,0 +1,153 @@
+.header__item-list a {
+    padding: 0 10px;
+}
+
+.menu-link {
+    color: var(--text-color);
+}
+
+.menu {
+    font-size: 30px;
+    display: none;
+}
+
+.menu-list {
+    background: black;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index: 4;
+    width: calc(100% - 50px);
+    display: block;
+    height: 100%;
+    z-index: 6;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s;
+    overflow-y: auto;
+}
+
+.menu__list-item--sub {
+    list-style: none;
+    font-size: 25px;
+}
+
+.menu__list-item--sub:hover {
+    background-color: #ccc;
+}
+
+.menu-link {
+    text-decoration: none;
+    display: block;
+    padding: 17px 33px;
+}
+
+#for-nav {
+    display: none;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+}
+
+
+/* Tablet Pro */
+
+@media (min-width: 1024px) and (max-width: 1239px) {}
+
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .nav {
+        color: #fff;
+        padding-right: 12px;
+    }
+    #for-nav:checked~.overlay {
+        display: block;
+    }
+    #for-nav:checked~.menu-list {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-link {
+        text-decoration: none;
+        display: block;
+        padding: 17px 33px;
+    }
+    .menu__list-item--sub {
+        list-style: none;
+        font-size: 25px;
+    }
+    .menu__list-item--sub:hover {
+        background-color: #ccc;
+    }
+    #for {
+        display: block;
+    }
+}
+
+
+/* Tablet va mobile */
+
+@media (max-width: 1023px) {}
+
+
+/* MOBILE */
+
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .header-text-sub-tablet {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav {
+        color: #fff;
+        padding-right: 12px;
+    }
+    #for-nav:checked~.overlay {
+        display: block;
+    }
+    #for-nav:checked~.menu-list {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .menu {
+        display: block;
+        font-size: 30px;
+    }
+    .menu-link {
+        text-decoration: none;
+        display: block;
+        padding: 17px 33px;
+        color: var(--white-color);
+    }
+    .menu__list-item--sub {
+        list-style: none;
+        font-size: 25px;
+    }
+    .menu__list-item--sub:hover {
+        background-color: #ccc;
+    }
+    #for {
+        display: block;
+    }
+    .header-text-tablet {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        align-items: center;
+    }
+}

@@ -1,0 +1,55 @@
+/* Tablet Pro */
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .content__title-sub-main-p {
+        padding: 0 12px;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {}
+
+
+/* Tablet va mobile */
+
+@media (max-width: 1023px) {}
+
+
+/* MOBILE */
+
+@media (max-width: 739px) {
+    .content__title {
+        padding: 0 30px;
+    }
+    .container-2-img {
+        width: 40%;
+    }
+    .container-2-img-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+    .container-1-text {
+        font-size: 20px;
+    }
+    .mobile-display-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-2-1 {
+        display: flex;
+        padding: 9px 0 0 0;
+    }
+    .content__month-sold {
+        min-width: unset;
+        margin: auto;
+    }
+    .auth-form {
+        max-width: 500px;
+        width: unset;
+    }
+}
